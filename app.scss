@@ -1,0 +1,172 @@
+//Responsive import
+@import "Responsive Mixins/Responsive.scss";
+
+//Variables
+$mainFont: arial;
+$primaryShade: #303030;
+$lightShade: #3030308f;
+$hoverColor: #1e9fdb;
+$btnBackground: #e7e7e7;
+
+//Mixins
+@mixin formBackground(){
+    background-image:url(../img/formBack.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85%;
+    width: 90%;
+    box-shadow: 2px 2px 20px $lightShade;
+    margin-top: 50px;
+    margin-left: 18px;
+}
+@mixin inputStyle(){
+    font-family: $mainFont;
+    font-size: 18px;
+    color: $primaryShade;
+    height: 40px;
+    width: 90%;
+    background-color: $btnBackground;
+    margin-top: 40px;
+    margin-left: 20px;
+    padding: 20px;
+    border: none;
+    box-shadow: 2px 2px 20px $lightShade;
+    border-radius: 6px;
+}
+@mixin formHeader(){
+    font-family: $mainFont;
+    font-size: 40px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    padding-top: 80px;
+    padding-left: 20%;
+}
+@mixin submitBtn(){
+    height: 40px;
+    width: 110px;
+    background-color: $btnBackground;
+    font-family: $mainFont;
+    font-size: 18px;
+    color: $primaryShade;
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-left: 120px;
+    border: none;
+    border-radius: 6px;
+}
+@mixin formDisplay(){
+    display: flex;
+    flex-direction: column;
+}
+
+//Main Style
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background-color: #f0eeee;
+}
+.contactFormContainer{
+    height: 100vh;
+    width: 100%;
+.formContentContain{
+    height: 100%;
+    width: 100%;
+    @include formBackground();
+    @include Tablet{
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+    @include Laptop{
+        margin-left: 50px;
+    }
+    @include lgLaptop{
+        margin-top: 110px;
+        margin-left: 70px;
+    }
+.contactUsHeading{
+    @include formHeader();
+    transition: .6s;
+    @include lgMobile{
+        padding-left: 23%;
+    }
+    @include Tablet{
+        font-size: 60px;
+        margin-left: 40px;
+    }
+    @include Laptop{
+        margin-left: 90px;
+    }
+    @include laptopBreakpoint{
+        margin-left: 140px;
+    }
+    @include lgLaptop{
+        font-size: 100px;
+        padding-top: 100px;
+        margin-left: 90px;
+    }
+}
+.contactUsHeading:hover{
+    color: $hoverColor;
+}
+.contactUs{
+    @include formDisplay();
+    @include Laptop{
+        margin-top: 20px;
+    }
+    @include laptopBreakpoint{
+        margin-left: 20px;
+    }
+    @include lgLaptop{
+        margin-top: 70px;
+    }
+    .globalInput{
+        @include inputStyle();
+        @include Tablet{
+            margin-left: 35px;
+            font-size: 20px;
+        }
+        @include Laptop{
+            margin-left: 48px;
+        }
+        @include lgLaptop{
+            height: 80px;
+            font-size: 30px;
+            margin-top: 70px;
+        }
+    }
+    .submitBtn{
+        @include submitBtn();
+        transition: .6s;
+        @include lgMobile{
+            margin-left: 130px;
+        }
+        @include Tablet{
+            margin-left: 290px;
+        }
+        @include Laptop{
+            margin-top: 80px;
+            margin-left: 380px;
+        }
+        @include laptopBreakpoint{
+            margin-left: 460px;
+        }
+        @include lgLaptop{
+            height: 100px;
+            width: 260px;
+            font-size: 40px;
+            margin-top: 120px;
+            margin-left: 470px;
+        }
+    }
+    .submitBtn:hover{
+        background-color: $hoverColor;
+        color: #e7e7e7;
+    }
+}
+}
+
+}
