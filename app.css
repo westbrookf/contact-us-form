@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background-color: #f0eeee;
+}
+
+.contactFormContainer {
+  height: 100vh;
+  width: 100%;
+}
+.contactFormContainer .formContentContain {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/formBack.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 85%;
+  width: 90%;
+  box-shadow: 2px 2px 20px #3030308f;
+  margin-top: 50px;
+  margin-left: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .contactFormContainer .formContentContain {
+    margin-top: 60px;
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .contactFormContainer .formContentContain {
+    margin-left: 50px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .contactFormContainer .formContentContain {
+    margin-top: 110px;
+    margin-left: 70px;
+  }
+}
+.contactFormContainer .formContentContain .contactUsHeading {
+  font-family: arial;
+  font-size: 40px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  padding-top: 80px;
+  padding-left: 20%;
+  transition: 0.6s;
+}
+@media only screen and (min-width: 414px) {
+  .contactFormContainer .formContentContain .contactUsHeading {
+    padding-left: 23%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contactFormContainer .formContentContain .contactUsHeading {
+    font-size: 60px;
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .contactFormContainer .formContentContain .contactUsHeading {
+    margin-left: 90px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contactFormContainer .formContentContain .contactUsHeading {
+    margin-left: 140px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .contactFormContainer .formContentContain .contactUsHeading {
+    font-size: 100px;
+    padding-top: 100px;
+    margin-left: 90px;
+  }
+}
+.contactFormContainer .formContentContain .contactUsHeading:hover {
+  color: #1e9fdb;
+}
+.contactFormContainer .formContentContain .contactUs {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1020px) {
+  .contactFormContainer .formContentContain .contactUs {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contactFormContainer .formContentContain .contactUs {
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .contactFormContainer .formContentContain .contactUs {
+    margin-top: 70px;
+  }
+}
+.contactFormContainer .formContentContain .contactUs .globalInput {
+  font-family: arial;
+  font-size: 18px;
+  color: #303030;
+  height: 40px;
+  width: 90%;
+  background-color: #e7e7e7;
+  margin-top: 40px;
+  margin-left: 20px;
+  padding: 20px;
+  border: none;
+  box-shadow: 2px 2px 20px #3030308f;
+  border-radius: 6px;
+}
+@media only screen and (min-width: 768px) {
+  .contactFormContainer .formContentContain .contactUs .globalInput {
+    margin-left: 35px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .contactFormContainer .formContentContain .contactUs .globalInput {
+    margin-left: 48px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .contactFormContainer .formContentContain .contactUs .globalInput {
+    height: 80px;
+    font-size: 30px;
+    margin-top: 70px;
+  }
+}
+.contactFormContainer .formContentContain .contactUs .submitBtn {
+  height: 40px;
+  width: 110px;
+  background-color: #e7e7e7;
+  font-family: arial;
+  font-size: 18px;
+  color: #303030;
+  text-transform: capitalize;
+  margin-top: 30px;
+  margin-left: 120px;
+  border: none;
+  border-radius: 6px;
+  transition: 0.6s;
+}
+@media only screen and (min-width: 414px) {
+  .contactFormContainer .formContentContain .contactUs .submitBtn {
+    margin-left: 130px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contactFormContainer .formContentContain .contactUs .submitBtn {
+    margin-left: 290px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .contactFormContainer .formContentContain .contactUs .submitBtn {
+    margin-top: 80px;
+    margin-left: 380px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contactFormContainer .formContentContain .contactUs .submitBtn {
+    margin-left: 460px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .contactFormContainer .formContentContain .contactUs .submitBtn {
+    height: 100px;
+    width: 260px;
+    font-size: 40px;
+    margin-top: 120px;
+    margin-left: 470px;
+  }
+}
+.contactFormContainer .formContentContain .contactUs .submitBtn:hover {
+  background-color: #1e9fdb;
+  color: #e7e7e7;
+}
+
+/*# sourceMappingURL=app.css.map */
